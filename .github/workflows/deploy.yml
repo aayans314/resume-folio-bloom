@@ -33,7 +33,8 @@ jobs:
 
       - name: Build with Vite
         run: npm run build
-
+      - name: Add CNAME for custom domain
+        run: echo "aayanshah.me" > out/CNAME
       - name: Debug - Check build output
         run: |
          ls -la out/
