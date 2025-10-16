@@ -34,6 +34,13 @@ jobs:
       - name: Build with Vite
         run: npm run build
 
+      - name: Debug - Check build output
+        run: |
+         ls -la out/
+         echo "--- Contents of index.html ---"
+         cat out/index.html
+         echo "--- End of index.html ---"
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
