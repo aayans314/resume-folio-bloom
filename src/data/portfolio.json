@@ -1,0 +1,156 @@
+{
+  "personal": {
+    "name": "Aayan Shah",
+    "title": "Computer Science & AI Student",
+    "tagline": "Building intelligent systems and pushing the boundaries of technology",
+    "email": "ashah28@colby.edu",
+    "phone": "(207)250-6075",
+    "location": "Waterville, ME",
+    "links": {
+      "linkedin": "https://linkedin.com/in/aayan",
+      "github": "https://github.com/aayans314"
+    }
+  },
+  "education": {
+    "school": "Colby College",
+    "location": "Waterville, ME",
+    "degree": "Bachelor of Arts",
+    "graduationDate": "May 2028",
+    "major": "Computer Science (AI Concentration), Physics",
+    "minor": "Mathematics",
+    "gpa": "4.15/4.00",
+    "coursework": [
+      "Data Structures & Algorithms",
+      "Computer Organization"
+    ],
+    "awards": [
+      "Honorable Mention IPhO 2023",
+      "Dana Scholar",
+      "Presidential Scholar",
+      "Dean's List (FA 24, SP 25)"
+    ]
+  },
+  "experience": [
+    {
+      "id": "surestart",
+      "title": "Machine Learning / AI Intern",
+      "organization": "SureStart",
+      "period": "May 2025 – Jul 2025",
+      "type": "internship",
+      "highlights": [
+        "10-week internship in machine and deep learning with TensorFlow & Keras, covering CNNs, RNNs, and transformers",
+        "Trained and optimized models on 50k+ image/text samples; improved classification scores and runtime efficiency",
+        "Dockerized training pipelines, enabling reproducible runs and cutting model deployment time from 90 min → 15 min",
+        "Collaborated with industry mentors to analyze scaling strategies; prototyped an AI-driven startup idea, AvayLable"
+      ]
+    },
+    {
+      "id": "ta",
+      "title": "Data Structures & Algorithms Lab TA",
+      "organization": "Colby College",
+      "period": "Feb 2025 – Present",
+      "type": "teaching",
+      "highlights": [
+        "Mentored 30+ students weekly, clarifying algorithmic concepts and debugging code",
+        "Improved lab completion rate by 18% compared to prior semester",
+        "Achieved 100% positive feedback from students"
+      ]
+    },
+    {
+      "id": "its",
+      "title": "ITS Student Support Center Technician",
+      "organization": "Colby College",
+      "period": "Sep 2024 – Present",
+      "type": "technical",
+      "highlights": [
+        "Resolved 120+ IT support tickets per semester (networking, software, printers, classroom tech)",
+        "Configured Wi-Fi security and multimedia setups; reduced classroom downtime incidents by 35%",
+        "Streamlined software installation process using imaging tools; cut average setup time from 2 hrs → 35 min"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "avaylable",
+      "title": "AvayLable",
+      "subtitle": "College Skill-Sharing App",
+      "tech": ["React Native", "Neon PostgreSQL", "JWT", "REST APIs"],
+      "description": "Led end-to-end design of a cross-platform app to exchange skills on campus",
+      "highlights": [
+        "Built backend in Neon PostgreSQL with REST APIs for profiles, chat, and reviews",
+        "Secured endpoints with JWT authentication",
+        "Introduced geolocation 'skills map' and notifications; boosted feature engagement by 35%"
+      ],
+      "links": {
+        "github": "https://github.com/aayans314/avaylable"
+      }
+    },
+    {
+      "id": "cpu",
+      "title": "16-bit RISC CPU & Assembler Toolchain",
+      "subtitle": "Hardware Design & Compiler",
+      "tech": ["VHDL", "Python", "Quartus"],
+      "description": "Designed 16-bit RISC CPU with custom instruction set and assembler",
+      "highlights": [
+        "Designed CPU in VHDL with 25+ custom instructions, ALU, branching, recursion, and memory subsystem",
+        "Built two-pass assembler in Python; converts source to .mif machine code, supporting macros and error detection",
+        "Simulated and verified programs (Fibonacci, I/O) using Quartus; validated hazard handling & control logic",
+        "Documented ISA and encoding; established FPGA synthesis flow"
+      ],
+      "links": {
+        "cpu": "https://github.com/aayans314/cpu",
+        "assembler": "https://github.com/aayans314/assembler"
+      }
+    },
+    {
+      "id": "voronoi",
+      "title": "Voronoi Game on Map",
+      "subtitle": "Algorithm Optimization",
+      "tech": ["Java", "Computational Geometry"],
+      "description": "Implemented competitive facility placement simulation with advanced optimization",
+      "highlights": [
+        "Implemented Voronoi Game simulation and modeled competitive facility placement strategies",
+        "Designed adaptive heuristics combining vertex weights, neighbor influence, and disruption; 96.95% win rate vs. greedy",
+        "Optimized geometry routines with spatial indexing, cutting runtime by 42%",
+        "Won 5th place in the entire course"
+      ],
+      "links": {
+        "github": "https://github.com/aayans314/voronoi"
+      }
+    },
+    {
+      "id": "notetaking",
+      "title": "AI Notetaking App",
+      "subtitle": "Lecture Transcription & Summarization",
+      "tech": ["React Native", "Whisper", "Hugging Face", "NLP"],
+      "description": "Developed mobile app for live lecture capture with AI-powered features",
+      "highlights": [
+        "Transcribes via Whisper and summarizes via Hugging Face models",
+        "Implemented full-text search and clustering; enabled retrieval of 500+ notes with <1s latency",
+        "Planned future extensions with AI-generated quizzes and spaced repetition reminders"
+      ],
+      "links": {
+        "github": "https://github.com/aayans314/notetaking"
+      }
+    }
+  ],
+  "skills": {
+    "languages": ["C", "Python", "Java", "Dart", "VHDL", "JavaScript", "HTML/CSS"],
+    "frameworks": ["React Native", "TensorFlow", "Whisper (OpenAI)", "ElevenLabs", "Hugging Face", "NumPy", "pandas"],
+    "tools": ["Git", "GitHub", "Docker", "NeonDB", "Supabase", "Clerk", "Windows/Linux", "Android", "Web"]
+  },
+  "leadership": [
+    {
+      "id": "hackers",
+      "title": "Colby Hackers",
+      "role": "Co-Founder & Organizer",
+      "description": "Relaunched dormant CS club; organized plans for Git/GitHub workshops, 3D printing parties, weekly coding jams, and hackathons. Built 115+ member community; partnered with faculty/alumni for mentorship."
+    },
+    {
+      "id": "robotics",
+      "title": "Colby Robotics",
+      "role": "Team Lead",
+      "description": "Led quadruped robot build integrating Raspberry Pi, motion, and vision sensors. Coordinated team across mechanical/software subsystems."
+    }
+  ]
+}
