@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/aayans314/resume-folio-bloom",
+  base: "/resume-folio-bloom/",
   build: {
     outDir: "out",
   },
