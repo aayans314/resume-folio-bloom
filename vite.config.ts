@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/',
+  // Use relative base in production so it works on repo subpaths and custom domains
+  base: mode === 'development' ? '/' : './',
   build: {
     outDir: "out",
   },
