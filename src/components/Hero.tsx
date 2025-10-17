@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import portfolioData from "@/data/portfolio.json";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Hero = () => {
   const { personal } = portfolioData;
@@ -13,12 +14,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
-      </div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Particle background overlayed above the site background */}
+      <ParticleBackground />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">

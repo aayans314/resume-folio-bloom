@@ -1,5 +1,6 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import bgImage from "../../assets/hdbgg.jpg";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,7 +10,10 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+    <div
+      className="flex min-h-screen items-center justify-center bg-fixed bg-cover bg-center"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
         <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
