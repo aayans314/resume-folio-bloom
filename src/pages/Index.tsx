@@ -9,6 +9,7 @@ import Leadership from "@/components/Leadership";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import bgImage from "../../assets/hdbgg.jpg";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Index = () => {
   return (
@@ -17,13 +18,16 @@ const Index = () => {
       {/* Hero has particles only, no background image */}
       <Hero />
 
-      {/* Background image starts after Hero with a subtle translucent overlay */}
+      {/* Background after Hero: dark, focused tone over image */}
       <div
         className="relative bg-fixed bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <div className="absolute inset-0 bg-white/15" />
-        <div className="relative">
+        {/* Darken image for contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/85" />
+        {/* Particles over image, under content */}
+        <ParticleBackground />
+        <div className="relative z-10">
           <About />
           <Education />
           <Experience />

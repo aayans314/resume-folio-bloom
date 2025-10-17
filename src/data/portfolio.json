@@ -1,13 +1,13 @@
 {
   "personal": {
     "name": "Aayan Shah",
-    "title": "Computer Science & AI Student",
-    "tagline": "Building intelligent systems and pushing the boundaries of technology",
+    "title": "Computer Science & Physics Student",
+    "tagline": "Pushing the boundaries of technology and innovation.",
     "email": "ashah28@colby.edu",
     "phone": "(207)250-6075",
     "location": "Waterville, ME",
     "links": {
-      "linkedin": "https://linkedin.com/in/aayan",
+      "linkedin": "www.linkedin.com/in/aayan-shah-964471291",
       "github": "https://github.com/aayans314"
     }
   },
@@ -21,7 +21,9 @@
     "gpa": "4.15/4.00",
     "coursework": [
       "Data Structures & Algorithms",
-      "Computer Organization"
+      "Computer Organization",
+      "Vector Calculus",
+      "Modern Physics"
     ],
     "awards": [
       "Honorable Mention IPhO 2023",
@@ -82,7 +84,7 @@
         "Introduced geolocation 'skills map' and notifications; boosted feature engagement by 35%"
       ],
       "links": {
-        "github": "https://github.com/aayans314/avaylable"
+        "github": "https://github.com/aayans314/avaylable_locus"
       }
     },
     {
@@ -98,8 +100,8 @@
         "Documented ISA and encoding; established FPGA synthesis flow"
       ],
       "links": {
-        "cpu": "https://github.com/aayans314/cpu",
-        "assembler": "https://github.com/aayans314/assembler"
+        "cpu": "https://github.com/aayans314/RISC-CPU-VHDL-Core",
+        "assembler": "https://github.com/aayans314/Assembler-VHDL-2Pass-CPU"
       }
     },
     {
@@ -115,7 +117,7 @@
         "Won 5th place in the entire course"
       ],
       "links": {
-        "github": "https://github.com/aayans314/voronoi"
+        "github": "https://github.com/aayans314/Voronoi-Game"
       }
     },
     {
@@ -130,7 +132,7 @@
         "Planned future extensions with AI-generated quizzes and spaced repetition reminders"
       ],
       "links": {
-        "github": "https://github.com/aayans314/notetaking"
+        "github": "https://github.com/aayans314/NoteApp"
       }
     }
   ],

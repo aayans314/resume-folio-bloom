@@ -52,15 +52,15 @@ const ParticleBackground: React.FC = () => {
         id,
         x: Math.random() * 120 - 20,
         y: Math.random() * 120 + 10,
-        size: Math.random() * 3 + 3,
+        size: Math.random() * 20 + 3,
         speedX,
         speedY,
         originalSpeedX: speedX,
         originalSpeedY: speedY,
         opacity: Math.random() * 0.7 + 0.2,
         // Near-white particles for a cleaner, subtle look
-        color: `hsl(0, 0%, ${Math.floor(Math.random() * 15) + 85}%)`,
-        trail: Math.random() * 20 + 15,
+color: `hsl(0, 100%, ${Math.floor(Math.random() * 101)}%)`,
+        trail: Math.random() * 5 + 15,
       };
     };
 
@@ -94,8 +94,8 @@ const ParticleBackground: React.FC = () => {
             newSpeedY = newSpeedY * 0.98 + particle.originalSpeedY * 0.02;
           }
 
-          let newX = particle.x + newSpeedX;
-          let newY = particle.y + newSpeedY;
+          const newX = particle.x + newSpeedX;
+          const newY = particle.y + newSpeedY;
 
           if (newX > 120 || newY < -20) {
             return createParticle(particle.id);
@@ -119,7 +119,7 @@ const ParticleBackground: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none"
+      className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0"
     >
       {particles.map((particle) => (
         <div

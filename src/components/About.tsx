@@ -56,7 +56,7 @@ const About = () => {
                 {highlights.map((item, index) => (
                   <Card
                     key={index}
-                    className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border/50 bg-background/80 backdrop-blur-sm"
+                    className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-white/10 bg-black/40 text-white backdrop-blur-md"
                   >
                     <div className="mb-4">
                       <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center">

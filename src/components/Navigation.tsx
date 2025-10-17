@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, FileDown } from "lucide-react";
 
@@ -71,7 +71,7 @@ const Navigation = () => {
             <Button size="sm" className="gap-2" asChild>
               <a href="/resume.pdf" download>
                 <FileDown className="h-4 w-4" />
-                Résumé
+                Resume
               </a>
             </Button>
           </div>
@@ -110,7 +110,7 @@ const Navigation = () => {
                 <Button size="sm" className="w-full gap-2" asChild>
                   <a href="/resume.pdf" download>
                     <FileDown className="h-4 w-4" />
-                    Download Résumé
+                    Download Resume
                   </a>
                 </Button>
               </div>
@@ -123,3 +123,8 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+
+
+
+
