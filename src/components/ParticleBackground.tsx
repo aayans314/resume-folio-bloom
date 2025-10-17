@@ -21,13 +21,12 @@ const ParticleBackground: React.FC = () => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        mousePos.current = {
-          x: ((e.clientX - rect.left) / rect.width) * 100,
-          y: ((e.clientY - rect.top) / rect.height) * 100,
-        };
-      }
+      const vw = window.innerWidth || 1;
+      const vh = window.innerHeight || 1;
+      mousePos.current = {
+        x: (e.clientX / vw) * 100,
+        y: (e.clientY / vh) * 100,
+      };
     };
 
     const handleMouseLeave = () => {
@@ -50,8 +49,9 @@ const ParticleBackground: React.FC = () => {
 
       return {
         id,
-        x: Math.random() * 120 - 20,
-        y: Math.random() * 120 + 10,
+        // Spawn slightly offscreen near the bottom to drift upward-right
+        x: Math.random() * 120 - 10, // -10%..110%
+        y: Math.random() * 120-10, // 100%..130%
         size: Math.random() * 20 + 3,
         speedX,
         speedY,
@@ -59,8 +59,8 @@ const ParticleBackground: React.FC = () => {
         originalSpeedY: speedY,
         opacity: Math.random() * 0.7 + 0.2,
         // Near-white particles for a cleaner, subtle look
-color: `hsl(0, 100%, ${Math.floor(Math.random() * 101)}%)`,
-        trail: Math.random() * 5 + 15,
+        color: `hsl(${Math.floor(Math.random() * 30) + 210}, 100%, ${Math.floor(Math.random() * 101)}%)`,
+        trail: Math.random() * 10,
       };
     };
 
@@ -97,7 +97,7 @@ color: `hsl(0, 100%, ${Math.floor(Math.random() * 101)}%)`,
           const newX = particle.x + newSpeedX;
           const newY = particle.y + newSpeedY;
 
-          if (newX > 120 || newY < -20) {
+          if (newX > 120 || newY < -20 || newX < -20 || newY > 140) {
             return createParticle(particle.id);
           }
 
@@ -119,7 +119,7 @@ color: `hsl(0, 100%, ${Math.floor(Math.random() * 101)}%)`,
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0"
+      className="fixed inset-0 w-full h-full overflow-hidden pointer-events-none z-[5]"
     >
       {particles.map((particle) => (
         <div

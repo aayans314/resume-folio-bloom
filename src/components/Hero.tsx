@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import portfolioData from "@/data/portfolio.json";
-import ParticleBackground from "@/components/ParticleBackground";
 
 const Hero = () => {
   const { personal } = portfolioData;
@@ -53,8 +52,6 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
-      {/* Particle background overlayed above the site background */}
-      <ParticleBackground />
 
       <motion.div
         className="container mx-auto px-4 relative z-10"
