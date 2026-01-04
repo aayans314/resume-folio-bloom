@@ -7,7 +7,7 @@
     "phone": "(207)250-6075",
     "location": "Waterville, ME",
     "links": {
-      "linkedin": "https://linkedin.com/in/aayan-shah-964471291",
+      "linkedin": "https://linkedin.com/in/aayan",
       "github": "https://github.com/aayans314"
     }
   },
@@ -20,10 +20,10 @@
     "minor": "Mathematics",
     "gpa": "4.15/4.00",
     "coursework": [
-      "Data Structures & Algorithms",
+      "DSA",
       "Computer Organization",
-      "Vector Calculus",
-      "Modern Physics"
+      "Modern Physics",
+      "Exp. in Modern Physics"
     ],
     "awards": [
       "Honorable Mention IPhO 2023",
@@ -42,7 +42,6 @@
       "highlights": [
         "10-week internship in machine and deep learning with TensorFlow & Keras, covering CNNs, RNNs, and transformers",
         "Trained and optimized models on 50k+ image/text samples; improved classification scores and runtime efficiency",
-        "Dockerized training pipelines, enabling reproducible runs and cutting model deployment time from 90 min → 15 min",
         "Collaborated with industry mentors to analyze scaling strategies; prototyped an AI-driven startup idea, AvayLable"
       ]
     },
@@ -54,8 +53,7 @@
       "type": "teaching",
       "highlights": [
         "Mentored 30+ students weekly, clarifying algorithmic concepts and debugging code",
-        "Improved lab completion rate by 18% compared to prior semester",
-        "Achieved 100% positive feedback from students"
+        "Improved lab completion rate and achieved 100% positive feedback"
       ]
     },
     {
@@ -65,9 +63,8 @@
       "period": "Sep 2024 – Present",
       "type": "technical",
       "highlights": [
-        "Resolved 120+ IT support tickets per semester (networking, software, printers, classroom tech)",
-        "Configured Wi-Fi security and multimedia setups; reduced classroom downtime incidents by 35%",
-        "Streamlined software installation process using imaging tools; cut average setup time from 2 hrs → 35 min"
+        "Provided front-line IT support at the Colby ITS Office for students, faculty, and staff by diagnosing and resolving software, hardware, and network issues across Windows and macOS systems",
+        "Assisted with classroom and lab technology setup, including projectors, audio systems, and presentation tools"
       ]
     }
   ],
@@ -76,12 +73,12 @@
       "id": "avaylable",
       "title": "AvayLable",
       "subtitle": "College Skill-Sharing App",
-      "tech": ["React Native", "Neon PostgreSQL", "JWT", "REST APIs"],
-      "description": "Led end-to-end design of a cross-platform app to exchange skills on campus",
+      "tech": ["React Native", "Neon PostgreSQL"],
+      "description": "Cross-platform app to exchange skills",
       "highlights": [
-        "Built backend in Neon PostgreSQL with REST APIs for profiles, chat, and reviews",
-        "Secured endpoints with JWT authentication",
-        "Introduced geolocation 'skills map' and notifications; boosted feature engagement by 35%"
+        "Led end-to-end design of a cross-platform app to exchange skills (rides) alongside market research and analysis",
+        "Built database in Neon PostgreSQL with REST APIs for profiles, chat, and reviews; managed state using Zustand",
+        "Introduced payment system with Stripe, Google Maps API for mapping, with future extension with ML optimized routing"
       ],
       "links": {
         "github": "https://github.com/aayans314/avaylable_locus"
@@ -91,13 +88,13 @@
       "id": "cpu",
       "title": "16-bit RISC CPU & Assembler Toolchain",
       "subtitle": "Hardware Design & Compiler",
-      "tech": ["VHDL", "Python", "Quartus"],
-      "description": "Designed 16-bit RISC CPU with custom instruction set and assembler",
+      "tech": ["VHDL", "Python"],
+      "description": "Custom RISC CPU and Assembler",
       "highlights": [
-        "Designed CPU in VHDL with 25+ custom instructions, ALU, branching, recursion, and memory subsystem",
+        "Designed 16-bit RISC CPU in VHDL with 25+ custom instructions, ALU, branching, recursion, and memory subsystem",
         "Built two-pass assembler in Python; converts source to .mif machine code, supporting macros and error detection",
         "Simulated and verified programs (Fibonacci, I/O) using Quartus; validated hazard handling & control logic",
-        "Documented ISA and encoding; established FPGA synthesis flow"
+        "Documented ISA and encoding; established FPGA synthesis flow, enabling reproducibility for future extensions"
       ],
       "links": {
         "cpu": "https://github.com/aayans314/RISC-CPU-VHDL-Core",
@@ -108,13 +105,12 @@
       "id": "voronoi",
       "title": "Voronoi Game on Map",
       "subtitle": "Algorithm Optimization",
-      "tech": ["Java", "Computational Geometry"],
-      "description": "Implemented competitive facility placement simulation with advanced optimization",
+      "tech": ["Java"],
+      "description": "Competitive facility placement simulation",
       "highlights": [
         "Implemented Voronoi Game simulation and modeled competitive facility placement strategies",
-        "Designed adaptive heuristics combining vertex weights, neighbor influence, and disruption; 96.95% win rate vs. greedy",
-        "Optimized geometry routines with spatial indexing, cutting runtime by 42%",
-        "Won 5th place in the entire course"
+        "Designed adaptive heuristics combining vertex weights, neighbor influence, and disruption; 96.95% win vs. greedy",
+        "Optimized routines with careful indexing, cutting runtime by 42%; won 5th place in the entire course"
       ],
       "links": {
         "github": "https://github.com/aayans314/Voronoi-Game"
@@ -124,12 +120,11 @@
       "id": "notetaking",
       "title": "AI Notetaking App",
       "subtitle": "Lecture Transcription & Summarization",
-      "tech": ["React Native", "Whisper", "Hugging Face", "NLP"],
-      "description": "Developed mobile app for live lecture capture with AI-powered features",
+      "tech": ["React Native", "Whisper", "Hugging Face"],
+      "description": "Mobile app for live lecture capture",
       "highlights": [
-        "Transcribes via Whisper and summarizes via Hugging Face models",
-        "Implemented full-text search and clustering; enabled retrieval of 500+ notes with <1s latency",
-        "Planned future extensions with AI-generated quizzes and spaced repetition reminders"
+        "Developed mobile app for live lecture capture; transcribes via Whisper and summarizes via Hugging Face models",
+        "Implemented systematic plans of future extensions with AI-generated quizzes and spaced repetition reminders"
       ],
       "links": {
         "github": "https://github.com/aayans314/NoteApp"
@@ -137,9 +132,9 @@
     }
   ],
   "skills": {
-    "languages": ["C", "Python", "Java", "Dart", "VHDL", "JavaScript", "HTML/CSS"],
+    "languages": ["C", "Python", "Java", "Dart", "VHDL", "JavaScript", "Elixir", "HTML/CSS"],
     "frameworks": ["React Native", "TensorFlow", "Whisper (OpenAI)", "ElevenLabs", "Hugging Face", "NumPy", "pandas"],
-    "tools": ["Git", "GitHub", "Docker", "NeonDB", "Supabase", "Clerk", "Windows/Linux", "Android", "Web"]
+    "tools": ["Git", "GitHub", "Docker", "NeonDB", "Supabase", "Clerk", "Resend", "Windows/Linux", "Android", "Web"]
   },
   "leadership": [
     {
@@ -152,7 +147,7 @@
       "id": "robotics",
       "title": "Colby Robotics",
       "role": "Team Lead",
-      "description": "Led quadruped robot build integrating Raspberry Pi, motion, and vision sensors. Coordinated team across mechanical/software subsystems."
+      "description": "Led quadruped robot build integrating Raspberry Pi, motion, and vision sensors. Attended Robotics Exhibitions as representatives."
     }
   ]
 }
